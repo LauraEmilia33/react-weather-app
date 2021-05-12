@@ -1,9 +1,18 @@
+import Weather from "./Weather.js";
 import './App.css';
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Weather App</h1>
+
+      <header>
+        <h1>Weather App</h1>
+      </header>
+
+      <div className="Main">
+        <Weather />
+      </div>
+
       <footer className="Footer">
         This project was coded by {" "}
         <a
@@ -21,7 +30,7 @@ export default function App() {
           open-sourced on GitHub.
         </a>
       </footer>
-    </div>
+    </div >
   );
 }
 

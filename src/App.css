@@ -1,0 +1,49 @@
+/* BODY */
+
+body {
+  background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* HEADER */
+
+header {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+h1 {
+  font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: hsl(188, 55%, 28%);
+  font-size: 47px;
+  margin-bottom: 10px;
+  display: inline;
+}
+
+/* MAIN */
+
+.Main {
+  background-image: url("./gameboy.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 483px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+/* FOOTER */
+
+footer {
+  font-family: "Roboto Mono";
+  font-size: 15px;
+  color: #1f616a;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}

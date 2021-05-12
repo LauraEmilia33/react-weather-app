@@ -1,0 +1,33 @@
+.Date {
+  font-family: "Roboto Mono", monospace;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  bottom: 14px;
+  color: #ba71ae;
+}
+
+.Humidity{
+  font-family: "Roboto Mono", monospace;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 52px;
+  right: 40px;
+  color: white;
+  font-size: 15px;
+}
+
+.Wind {
+  font-family: "Roboto Mono", monospace;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 52px;
+  left: 40px;
+  color: white;
+  font-size: 15px;
+}
