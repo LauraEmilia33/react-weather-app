@@ -31,3 +31,141 @@
   color: white;
   font-size: 15px;
 }
+
+.City {
+  font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 69px;
+}
+
+.Description {
+  font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 82px;
+  color: #20656f;
+}
+
+.Degrees {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 108px;
+  font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  color: #20656f;
+  right: 7px;
+}
+
+.Units {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 62px;
+  font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  color: #20656f;
+  left: 99px;
+}
+
+.Icon {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 4px;
+  right: 113px;
+}
+
+/* FORM */
+
+.form-div {
+  text-align: center;
+  margin: 0 auto;
+  display: inline;
+  position: relative;
+  top: 125px;
+}
+
+input {
+  border: white solid 5px;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.search-button {
+  background-color: #9fdae1;
+  border: #9fdae1 solid 5px;
+  color: #20656f;
+  border-radius: 5px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.search-button:hover {
+  cursor: pointer;
+}
+
+.search-button:focus {
+  outline: none;
+}
+
+/* Fahrenheit and Celsius */
+
+.Fahrenheit {
+  background-color: #43bdd0;
+  color: black;
+  font-family: "ROBOTO MONO";
+  font-size: 27px;
+  font-weight: bolder;
+  border: 10px solid #43bdd0;
+  border-radius: 100%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  bottom: 67px;
+  left: 255px;
+}
+
+.Fahrenheit:focus {
+  outline: 0;
+}
+
+.Fahrenheit:hover {
+  cursor: pointer;
+}
+
+
+.Celsius {
+  background-color: #eae72c;
+  color: black;
+  font-family: "ROBOTO MONO";
+  font-size: 27px;
+  font-weight: bolder;
+  border: 11px solid #eae72c;
+  border-radius: 100%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  bottom: 150px;
+  left: 328px;
+}
+
+.Celsius:focus {
+  outline: 0;
+}
+
+.Celsius:hover {
+  cursor: pointer;
+}
