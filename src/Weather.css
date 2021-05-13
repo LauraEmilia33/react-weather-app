@@ -4,7 +4,7 @@
   display: block;
   text-align: center;
   position: relative;
-  bottom: 14px;
+  bottom: 45px;
   color: #ba71ae;
 }
 
@@ -14,19 +14,19 @@
   display: inline-block;
   text-align: center;
   position: relative;
-  top: 52px;
+  top: 23px;
   right: 40px;
   color: white;
   font-size: 15px;
 }
 
 .Wind {
-  font-family: "Roboto Mono", monospace;
+   font-family: "Roboto Mono", monospace;
   margin: 0 auto;
   display: inline-block;
   text-align: center;
   position: relative;
-  top: 52px;
+  top: 23px;
   left: 40px;
   color: white;
   font-size: 15px;
@@ -93,7 +93,7 @@
   margin: 0 auto;
   display: inline;
   position: relative;
-  top: 125px;
+  top: 350px;
 }
 
 input {

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
-import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo"
 import "./Weather.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
-
+  const [city, setCity] = useState(props.defaultCity);
   function handleResponse(response) {
 
     setWeatherData({
@@ -16,8 +16,23 @@ export default function Weather(props) {
       city: response.data.name,
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
+  }
+
+  function search() {
+    const apiKey = "95f162609dd8746fc4a9169098a143e3";
+    let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
+
+  function handleCityChange(event) {
+    setCity(event.target.value);
   }
 
 
@@ -26,48 +41,18 @@ export default function Weather(props) {
 
       <div className="Weather">
 
-        <p className="Date">
-          Last Updated: <FormattedDate date={weatherData.date} />
-        </p>
-
-        <p className="Humidity">
-          Humidity: {weatherData.humidity} %
-        </p>
-
-        <p className="Wind">
-          Wind: {Math.round(weatherData.wind)} km/h
-        </p>
-
-        <h2 className="City">
-          {weatherData.city}
-        </h2>
-
-        <h3 className="Description">
-          {weatherData.description}
-        </h3>
-
-        <p className="Degrees">
-          {Math.round(weatherData.temperature)}
-        </p>
-
-        <p className="Units">
-          ºC
-        </p>
-
-        <img
-          className="Icon"
-          src={weatherData.iconUrl}
-          alt={weatherData.description}
-        />
-
         <div className="form-div">
-          <form className="search-city">
+          <form
+            className="search-city"
+            onSubmit={handleSubmit}
+          >
             <input
               type="search"
               placeholder="Enter a City"
               className="search-input"
               autoFocus="on"
               autoComplete="off"
+              onChange={handleCityChange}
             />
             <input
               type="submit"
@@ -76,6 +61,8 @@ export default function Weather(props) {
             />
           </form>
         </div>
+
+        <WeatherInfo data={weatherData} />
 
         <button className="Fahrenheit">
           ºF
@@ -88,10 +75,7 @@ export default function Weather(props) {
       </div>
     );
   } else {
-    const apiKey = "95f162609dd8746fc4a9169098a143e3";
-    let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
-
+    search();
     return "Loading..."
   }
 }
