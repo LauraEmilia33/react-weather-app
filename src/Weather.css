@@ -77,12 +77,13 @@
   left: 99px;
 }
 
-.Icon {
+/* ICON */
+canvas {
   margin: 0 auto;
   display: block;
   text-align: center;
   position: relative;
-  top: 4px;
+  bottom: 15px;
   right: 113px;
 }
 
