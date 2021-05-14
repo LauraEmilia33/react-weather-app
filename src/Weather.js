@@ -66,15 +66,6 @@ export default function Weather(props) {
           <WeatherInfo data={weatherData} />
         </div>
 
-
-        <button className="Fahrenheit">
-          ºF
-        </button>
-
-        <button className="Celsius">
-          ºC
-        </button>
-
       </div>
     );
   } else {

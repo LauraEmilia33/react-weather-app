@@ -39,7 +39,7 @@
   display: block;
   text-align: center;
   position: relative;
-  top: 69px;
+  top: 40px;
 }
 
 .Description {
@@ -49,7 +49,7 @@
   display: block;
   text-align: center;
   position: relative;
-  top: 82px;
+  top: 50px;
   color: #20656f;
 }
 
@@ -58,7 +58,7 @@
   display: block;
   text-align: center;
   position: relative;
-  top: 108px;
+  top: 10px;
   font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
   font-size: 45px;
   color: #20656f;
@@ -70,7 +70,7 @@
   display: block;
   text-align: center;
   position: relative;
-  top: 62px;
+  bottom: 35px;
   font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
   font-size: 45px;
   color: #20656f;
@@ -83,7 +83,7 @@ canvas {
   display: block;
   text-align: center;
   position: relative;
-  bottom: 15px;
+  top: 60px;
   right: 113px;
 }
 
