@@ -1,0 +1,44 @@
+/* EXTENDED FORECAST */
+
+/* Colum 2 - MIDDLE */
+
+.Column-1 {
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  bottom: 135px;
+  margin-right: 15px;
+  margin-left: 15px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+}
+
+.hour-one {
+  margin: 0 auto;
+}
+
+.forecastTemperature{
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  left: 3px;
+  bottom: 7px;
+}
+
+.boldWeather {
+  font-weight: bolder;
+  font-family: "system-ui";
+}
+
+.forecastIcon {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  bottom:65px;
+  left:112px;
+  padding-top:9px;
+  padding-bottom:5px;
+}
+
+

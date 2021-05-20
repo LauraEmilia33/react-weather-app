@@ -11,6 +11,7 @@ export default function Weather(props) {
 
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       date: new Date(response.data.dt * 1000),
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
@@ -35,7 +36,6 @@ export default function Weather(props) {
   function handleCityChange(event) {
     setCity(event.target.value);
   }
-
 
   if (weatherData.ready) {
     return (
@@ -62,10 +62,8 @@ export default function Weather(props) {
             />
           </form>
         </div>
-
         <WeatherInfo data={weatherData} />
-        <WeatherForecast />
-
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {

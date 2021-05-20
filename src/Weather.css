@@ -78,12 +78,13 @@
 }
 
 /* ICON */
+
 canvas {
   margin: 0 auto;
   display: block;
   text-align: center;
   position: relative;
-  top: 60px;
+  top:60px;
   right: 113px;
 }
 
@@ -171,113 +172,3 @@ input:focus {
   cursor: pointer;
 }
 
-/* EXTENDED FORECAST */
-
-/* Column LEFT */
-.Column-1 {
-  margin: 0 auto;
-  display: inline-block;
-  text-align: center;
-  position: relative;
-  bottom: 137px;
-  margin-right: 15px;
-  margin-left: 15px;
-  font-family: "Roboto Mono", monospace;
-  font-size: 14px;
-}
-
-.hour-one {
-  margin: 0 auto;
-}
-
-.forecastTemperature{
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  left: 3px;
-}
-
-.boldWeather {
-  font-weight: bolder;
-  font-family: "system-ui";
-}
-
-.forecastIcon {
-  height: 50px;
-  display: block;
-  margin: 0 auto;
-}
-
-/* Colum 2 - MIDDLE */
-
-.Column-2 {
-  margin: 0 auto;
-  display: inline-block;
-  text-align: center;
-  position: relative;
-   bottom: 137px;
-  margin-right: 15px;
-  margin-left: 15px;
-  font-family: "Roboto Mono", monospace;
-  font-size: 14px;
-}
-
-.hour-one {
-  margin: 0 auto;
-}
-
-.forecastTemperature{
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  left: 3px;
-}
-
-.boldWeather {
-  font-weight: bolder;
-  font-family: "system-ui";
-}
-
-.forecastIcon {
-  height: 30px;
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  bottom:60px;
-}
-
-/* Column 3- RIGHT */
-
-.Column-3 {
-  margin: 0 auto;
-  display: inline-block;
-  text-align: center;
-  position: relative;
-   bottom: 137px;
-  margin-right: 15px;
-  margin-left: 15px;
-  font-family: "Roboto Mono", monospace;
-  font-size: 14px;
-}
-
-.hour-one {
-  margin: 0 auto;
-}
-
-.forecastTemperature{
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  left: 3px;
-}
-
-.boldWeather {
-  font-weight: bolder;
-  font-family: "system-ui";
-}
-
-.forecastIcon {
-  height: 50px;
-  display: block;
-  margin: 0 auto;
-}

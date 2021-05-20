@@ -24,6 +24,7 @@ export default function App() {
             href="https://www.linkedin.com/in/laura-emilia-barojas/"
             target="_blank"
             rel="noreferrer"
+            className="LinkedIn"
           >
             Laura Barojas
               </a> and it is {" "}
