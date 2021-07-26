@@ -10,7 +10,7 @@ export default function App() {
       </header>
 
       <div className="Main">
-        <Weather defaultCity="London" />
+        <Weather defaultCity="Barcelona" />
       </div>
 
       <button className="Location">

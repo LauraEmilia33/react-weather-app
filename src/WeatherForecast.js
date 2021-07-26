@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import WeatherIcon from "./WeatherIcon";
 import "./WeatherForecast.css";
 import axios from "axios";
+import WeatherForecastDay from "./WeatherForecastDay";
 
 export default function WeatherForecast(props) {
 
@@ -16,19 +16,22 @@ export default function WeatherForecast(props) {
   if (loaded) {
     return (
       <div className="WeatherForecast">
-        <span className="Column-1">
-          <h4 className="forecast-day">
-            {forecast[0].dt}
-          </h4>
-          <div className="forecastIcon">
-            <WeatherIcon code={forecast[0].weather[0].icon} size={45} />
-          </div>
-          <p className="forecastTemperature">
-            <strong className="boldWeather">{forecast[0].temp.max}º</strong>{" "}{forecast[0].temp.min}º
-            </p>
-        </span>
+        <div className="row">
+          {forecast.map(function (dailyForecast, index) {
+            if (index < 4) {
+              return (
+                <div className="col" key={index}>
+                  <WeatherForecastDay data={dailyForecast} />
+                </div>
+              );
+            } else {
+              return null;
+            }
+          })}
+        </div>
       </div>
-    )
+    );
+
   } else {
     let apiKey = "95f162609dd8746fc4a9169098a143e3"
     let longitude = props.coordinates.lon;

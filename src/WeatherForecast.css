@@ -12,6 +12,13 @@
     font-size: 14px;
 }
 
+.row {
+   display: inline-flex;
+    margin: 0 auto;
+    position: relative;
+    left: 4px;
+}
+
 
 .forecast-day {
   margin: 0 auto;
@@ -40,12 +47,4 @@
     padding-bottom: 5px;
 }
 
-.forecast-icon {
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    position: relative;
-    top: 60px;
-    right: 113px;
-}
 
